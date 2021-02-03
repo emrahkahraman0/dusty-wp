@@ -1604,14 +1604,7 @@ a:hover {
   }
 }
 
-#projects-page {
-  width: 100%;
-  height: 250px; 
-  background-position: center center;
-  background-size: cover;
-  background: url("https://via.placeholder.com/1920x250") no-repeat top center;
-  position: relative;
-}
+#projects-page {}
 
 #projects-page .page-title {
   position: absolute;
@@ -1804,273 +1797,6 @@ a:hover {
   }
 }
 
-#faq-page {
-  width: 100%;
-  height: 250px; 
-  background-position: center center;
-  background-size: cover;
-  background: url("https://via.placeholder.com/1920x250") no-repeat top center;
-  position: relative;
-}
-
-#faq-page .page-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  font-family: "Oswald";
-  text-transform: uppercase;
-  font-size: 40px;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 8px #020202;
-}
-
-@media only screen and (max-width: 768px) {
-  #faq-page .page-title {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #faq-page .page-title {
-    font-size: 20px;
-  }
-}
-
-#faq {
-  width: 100%;
-  padding: 80px 0 50px 0;
-}
-
-#faq .title {
-  text-align: left;
-}
-
-#faq .title h5 {
-  text-transform: uppercase;
-  font-size: 16px;
-  padding-left: 60px;
-  font-family: "Oswald";
-  letter-spacing: 0.5px;
-  color: #f54337;
-  font-weight: 700;
-  margin-bottom: 0;
-  position: relative;
-}
-
-#faq .title h5::before {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: 0;
-  width: 50px;
-  height: 4px;
-  margin: 0 auto;
-  background-color: #f54337;
-}
-
-#faq .title h6 {
-  padding-top: 10px;
-  color: #020202;
-  font-size: 25px;
-  text-transform: capitalize;
-  font-family: "Oswald";
-  font-weight: 600;
-  color: #020202;
-  margin-bottom: 0;
-}
-
-@media only screen and (max-width: 480px) {
-  #faq .title h6 {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 250px) {
-  #faq .title h5 {
-    font-size: 12px;
-  }
-  #faq .title h6 {
-    font-size: 13px;
-    line-height: 18px;
-  }
-}
-
-#faq .accordion {
-  padding-top: 40px;
-}
-
-#faq .accordion .accordion-item {
-  border-bottom: 1px solid #a09d9d;
-}
-
-#faq .accordion .accordion-item button[aria-expanded='true'] {
-  border-bottom: 1px solid #f54337;
-}
-
-#faq .accordion button {
-  position: relative;
-  display: block;
-  text-align: left;
-  width: 100%;
-  color: #020202;
-  border: none;
-  background: none;
-  outline: none;
-  padding: 30px 0;
-}
-
-#faq .accordion button:last-child {
-  padding: 0;
-}
-
-#faq .accordion button:hover, #faq .accordion button:focus {
-  cursor: pointer;
-  color: #f54337;
-}
-
-#faq .accordion button:hover::after, #faq .accordion button:focus::after {
-  cursor: pointer;
-  color: #f54337;
-  border: 1px solid #a09d9d;
-}
-
-#faq .accordion button .accordion-title {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-#faq .accordion button .icon {
-  display: inline-block;
-  position: absolute;
-  top: 18px;
-  right: 0;
-  width: 22px;
-  height: 22px;
-  border: 1px solid;
-  border-radius: 22px;
-}
-
-#faq .accordion button .icon::before {
-  display: block;
-  position: absolute;
-  content: '';
-  top: 9px;
-  left: 5px;
-  width: 10px;
-  height: 2px;
-  background: currentColor;
-}
-
-#faq .accordion button .icon::after {
-  display: block;
-  position: absolute;
-  content: '';
-  top: 5px;
-  left: 9px;
-  width: 2px;
-  height: 10px;
-  background: currentColor;
-}
-
-#faq .accordion button[aria-expanded='true'] {
-  color: #f54337;
-}
-
-#faq .accordion button[aria-expanded='true'] .icon::after {
-  width: 0;
-}
-
-#faq .accordion button[aria-expanded='true'] + .accordion-content {
-  opacity: 1;
-  max-height: 9em;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-  will-change: opacity, max-height;
-}
-
-#faq .accordion .accordion-content {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: opacity 200ms linear, max-height 200ms linear;
-  transition: opacity 200ms linear, max-height 200ms linear;
-  will-change: opacity, max-height;
-}
-
-#faq .accordion .accordion-content p {
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 15px 0;
-  color: #a09d9d;
-}
-
-@media only screen and (max-width: 480px) {
-  #faq .accordion .accordion-item .accordion-title {
-    font-size: 14px;
-  }
-  #faq .accordion .accordion-item .accordion-content p {
-    font-size: 12px;
-  }
-}
-
-@media only screen and (max-width: 250px) {
-  #faq .accordion .accordion-item .accordion-title {
-    font-size: 12px;
-    letter-spacing: normal;
-    line-height: 15px;
-    margin-right: 30px;
-  }
-  #faq .accordion .accordion-item .accordion-content p {
-    font-size: 12px;
-  }
-}
-
-#blog-page {
-  width: 100%;
-  height: 250px; 
-  background-position: center center;
-  background-size: cover;
-  background: url("https://via.placeholder.com/1920x250") no-repeat top center;
-  position: relative;
-}
-
-#blog-page .page-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  font-family: "Oswald";
-  text-transform: uppercase;
-  font-size: 40px;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 8px #020202;
-}
-
-@media only screen and (max-width: 768px) {
-  #blog-page .page-title {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #blog-page .page-title {
-    font-size: 20px;
-  }
-}
-
 #blog {
   width: 100%;
   padding: 80px 0 50px 0;
@@ -2078,6 +1804,10 @@ a:hover {
 
 #blog .blog-wrapper .blog-item {
   margin-bottom: 30px;
+}
+
+#blog .blog-wrapper .blog-item:last-child {
+  margin-bottom: 0;
 }
 
 #blog .blog-wrapper .blog-item img {
@@ -2090,10 +1820,13 @@ a:hover {
   left: 25px;
   background-color: #f54337;
   padding: 5px 10px;
+  cursor: pointer;
+}
+
+#blog .blog-wrapper .blog-item .category a {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-  cursor: pointer;
 }
 
 #blog .blog-wrapper .blog-item h6 {
@@ -2170,37 +1903,34 @@ a:hover {
 }
 
 #blog .page {
+  width: 250px;
+  margin: 0px auto;
   text-align: center;
-  margin-bottom: 0;
-  padding: 30px 0 20px 0;
+  padding: 40px 0 25px 0;
 }
 
-#blog .page li {
-  display: inline-block;
-  margin-right: 7px;
-}
-
-#blog .page li:last-child {
-  margin-right: 0;
-}
-
-#blog .page li a {
-  display: inline-block;
+.wp-pagenavi{
+  clear: both;
+  text-align: center;
+  margin-bottom: 20px;
+ }
+ .wp-pagenavi a, .wp-pagenavi span{
+  background: #f07929;
+  margin-right: 10px;
   width: 30px;
   height: 30px;
-  line-height: 30px;
   text-align: center;
-  background-color: #f54337;
+  line-height: 30px;
   color: #fff;
-}
+  float: left;
+ }
+ .wp-pagenavi a:hover{
+  background: #393939;
+  color: #fff;
+ }
 
 @media screen and (max-width: 204px) {
-  #blog .page li {
-    margin: 0 5px 5px 0;
-  }
-  #blog .page li:last-child {
-    margin: 0 0 0 0;
-  }
+
 }
 
 .blog-post img {
@@ -2213,10 +1943,13 @@ a:hover {
   left: 25px;
   background-color: #f54337;
   padding: 5px 10px;
+  cursor: pointer;
+}
+
+.blog-post .category a {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-  cursor: pointer;
 }
 
 .blog-post h6 {
@@ -2243,6 +1976,17 @@ a:hover {
   letter-spacing: 0.5px;
   font-size: 14px;
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .blog-post h6 {
+    font-size: 14px;
+  }
+  .blog-post .date {font-size: 12px;}
+  .blog-post p {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .blog-sidebar .sidebar {
@@ -2330,44 +2074,29 @@ a:hover {
 }
 
 .blog-sidebar .sidebar .popular-post .post-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
-  padding-bottom: 15px;
+  padding-bottom: 7px;
 }
 
 .blog-sidebar .sidebar .popular-post .post-item:last-child {
   padding-bottom: 0;
 }
 
-.blog-sidebar .sidebar .popular-post .post-item .post-item-img img {
-  width: 100%;
-}
-
-.blog-sidebar .sidebar .popular-post .post-item .post-item-desc {
-  padding-left: 10px;
-}
-
-.blog-sidebar .sidebar .popular-post .post-item .post-item-desc h6 {
+.blog-sidebar .sidebar .popular-post .post-item h6 {
   margin-bottom: 0;
 }
 
-.blog-sidebar .sidebar .popular-post .post-item .post-item-desc h6 a {
+.blog-sidebar .sidebar .popular-post .post-item h6 a {
+  text-transform: capitalize;
   color: #020202;
   font-size: 14px;
 }
 
-.blog-sidebar .sidebar .popular-post .post-item .post-item-desc p {
+.blog-sidebar .sidebar .popular-post .post-item p {
   padding-top: 5px;
-  margin-bottom: 0;
   color: #a09d9d;
-  line-height: 17px;
+  line-height: 20px;
   font-size: 14px;
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2375,29 +2104,16 @@ a:hover {
     margin: 0 auto;
     right: 0;
   }
-  .blog-sidebar .sidebar .popular-post .post-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-  }
-  .blog-sidebar .sidebar .popular-post .post-item .post-item-desc {
-    padding: 7px 0 0 0;
-  }
 }
 
 @media only screen and (max-width: 480px) {
-  .blog-sidebar .sidebar .popular-post .post-item .post-item-desc h6 {
-    line-height: 15px;
+  .blog-sidebar .sidebar .popular-post .post-item h6 {
+    line-height: normal;
   }
-  .blog-sidebar .sidebar .popular-post .post-item .post-item-desc h6 a {
-    font-size: 12px;
+  .blog-sidebar .sidebar .popular-post .post-item h6 a {
+    font-size: 14px;
   }
-  .blog-sidebar .sidebar .popular-post .post-item .post-item-desc p {
+  .blog-sidebar .sidebar .popular-post .post-item p {
     font-size: 12px;
   }
 }

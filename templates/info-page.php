@@ -14,7 +14,7 @@
             <div class="home-contact-button">
                 <button><a href="<?php the_field('information_button_href'); ?>"><?php the_field('information_button'); ?></a></button>
             </div>
-            <!-- home-contact-button -->
+            <!-- home-contac-button -->
 
         <?php endwhile; else : ?>
             <p><?php esc_html_e( 'Sory Whatsap Men' ); ?></p>

@@ -1,7 +1,5 @@
 <?php
 
-$projects_item_button_href = get_field('projects_item_button_href');
-
 /*Template Name: Projects Page*/
 get_header(); ?>
 
@@ -32,6 +30,8 @@ get_header(); ?>
         <div class="projects-wrapper">
 
         <?php while( have_rows('projects_item') ): the_row();
+
+            $projects_item_button_href = get_field('projects_item_button_href');
     
             //vars
             $projects_item_img = get_sub_field('projects_item_img');
